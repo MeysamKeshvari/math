@@ -1,7 +1,5 @@
 package math
 
-import "fmt"
-
 func Add(a, b int) int {
 	return a + b
 }
@@ -14,7 +12,11 @@ func Div(a, b int) int {
 func Mul(a, b int) int {
 	return a * b
 }
-
-func main() {
-	fmt.Println(Add(5, 3)) //sample
+func IsEvenOrOdd(number int) string {
+	if number%2 == 0 {
+		return "even"
+	} else if number%2 != 0 {
+		return "odd"
+	}
+	return ""
 }
